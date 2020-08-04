@@ -1,0 +1,17 @@
+server:
+  port: 7777
+
+spring:
+  datasource:
+    username: postgres
+    password: 123456
+    url: jdbc:postgresql://localhost:5432/postgres?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull&amp;transformedBitIsBoolean=true
+    driver-class-name: org.postgresql.Driver
+  jackson:
+      data-format: yyyy-MM-dd HH:mm:ss
+      time-zone: GMT+8
+
+mybatis:
+#  mapper-locations: classpath:mapping/*Mapper.xml
+#  type-aliases-package: com.ntm.boot_mybatis.model
+  config-location: classpath:mybatis-config.xml
